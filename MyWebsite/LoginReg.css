@@ -1,0 +1,121 @@
+body{
+    background-color: #222629;
+}
+.Reg{
+    position: relative;
+    left: 1100px;
+    top: -85px;
+}
+div{
+    color: white;
+}
+input[type=text] {
+    box-shadow: black;
+    background-color: #644E5B;
+    padding:5px; 
+    border:2px solid rgb(31, 28, 30); 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input[type=text]:focus {
+    border-color:#333;
+    background-color: rgb(77, 231, 39);
+
+}
+
+
+input[type=password] {
+    box-shadow: black;
+    background-color:#644E5B;
+    padding:5px; 
+    border:2px solid rgb(31, 28, 30); 
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input[type=password]:focus {
+    background-color: rgb(206, 68, 68);
+    border-color:rgb(201, 122, 122);
+}
+button {
+    padding:5px 15px; 
+    background-color:#644E5B; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+button:hover{
+    background-color: rgb(233, 233, 37);
+}
+button:active{
+    background-color: rgb(201, 201, 76);
+    position: relative;
+    top: -3px;
+    left: 2px;
+    color: black;
+}
+.first{
+    color: black;
+}
+.first:hover{
+    -webkit-animation-name: big;
+    -webkit-animation-duration: 2s;
+    animation-name: big;
+    animation-duration: 2s;
+    
+    cursor: default;
+}
+
+.last{
+    color: orange;
+}
+p{
+    display: inline-block;
+}
+.loader {
+    position: fixed;
+    right: 45%;
+    top: 30%;
+    border: 16px solid #222629; /* Light grey */
+    border-top: 16px solid orange; /* Blue */
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    animation: spin 3s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+ 
+  .waiting {
+    position: relative;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 2px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-repeat: repeat;
+    background-size: 80%;
+    animation: animate 6s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }
+  .log{
+    overflow: hidden;
+    background-color: inherit;
+    font-family: Arial;
+  }
